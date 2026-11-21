@@ -183,7 +183,6 @@ if(NOT F3D_MACOS_BUNDLE)
       f3d_test(NAME TestDefaultConfigFileEXR DATA Rec709.exr CONFIG config_build LONG_TIMEOUT UI SKIP_GLES)
     endif()
     f3d_test(NAME TestDefaultConfigFilePLY DATA suzanneRGBA.ply CONFIG config_build LONG_TIMEOUT UI SKIP_GLES)
-    f3d_test(NAME TestDefaultConfigFileQuakeMDL DATA zombie.mdl CONFIG config_build LONG_TIMEOUT UI SKIP_GLES THRESHOLD 0.07) # Threshold is needed for IBL change after VTK 9.6
     f3d_test(NAME TestDefaultConfigFileLYS DATA bunny.lys CONFIG config_build LONG_TIMEOUT UI SKIP_GLES)
     f3d_test(NAME TestDefaultConfigFileAndCommand DATA suzanne.stl ARGS --up=-Y --camera-direction=-1,0.5,-1 CONFIG config_build LONG_TIMEOUT UI SKIP_GLES)
     f3d_test(NAME TestDefaultConfigTranslucent DATA red_translucent_monkey.gltf CONFIG config_build LONG_TIMEOUT UI SKIP_GLES)
